@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <button id="demo1" onclick="myfunction()">myfunction</button><br><br><br>
+        <button id="demo2" onclick="resetfunction()">resetfunction</button>
+        <p id="demo3"></p>
+    </body>
+    <script>
+        const element=document.getElementById("demo3");
+        function myfunction(){
+            setTimeout(function(){
+                element.innerHTML="WELCOME";
+                element.style.color="blue";
+            },4000);
+            setTimeout(function(){
+                element.innerHTML="Hello World";
+            },2000);
+        }
+        function resetfunction(){
+            element.innerHTML="Thank you";
+            element.style.color="dark pink";
+        }
+    </script>
+</html>
